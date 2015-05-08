@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		589465191AF8765A00A1918F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589465181AF8765A00A1918F /* AppDelegate.swift */; };
-		5894651B1AF8765A00A1918F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5894651A1AF8765A00A1918F /* ViewController.swift */; };
+		5894651B1AF8765A00A1918F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5894651A1AF8765A00A1918F /* MainViewController.swift */; };
 		589465201AF8765A00A1918F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5894651F1AF8765A00A1918F /* Images.xcassets */; };
 		5894652F1AF8765A00A1918F /* herosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5894652E1AF8765A00A1918F /* herosTests.swift */; };
-		589465391AF89D3F00A1918F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 589465381AF89D3F00A1918F /* ViewController.xib */; };
+		589465391AF89D3F00A1918F /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 589465381AF89D3F00A1918F /* MainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,12 +28,12 @@
 		589465131AF8765A00A1918F /* heros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = heros.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		589465171AF8765A00A1918F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		589465181AF8765A00A1918F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5894651A1AF8765A00A1918F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5894651A1AF8765A00A1918F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		5894651F1AF8765A00A1918F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		589465281AF8765A00A1918F /* herosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = herosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5894652D1AF8765A00A1918F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5894652E1AF8765A00A1918F /* herosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = herosTests.swift; sourceTree = "<group>"; };
-		589465381AF89D3F00A1918F /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		589465381AF89D3F00A1918F /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				589465181AF8765A00A1918F /* AppDelegate.swift */,
-				5894651A1AF8765A00A1918F /* ViewController.swift */,
-				589465381AF89D3F00A1918F /* ViewController.xib */,
+				5894651A1AF8765A00A1918F /* MainViewController.swift */,
+				589465381AF89D3F00A1918F /* MainViewController.xib */,
 				5894651F1AF8765A00A1918F /* Images.xcassets */,
 				589465161AF8765A00A1918F /* Supporting Files */,
 			);
@@ -189,7 +189,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				589465391AF89D3F00A1918F /* ViewController.xib in Resources */,
+				589465391AF89D3F00A1918F /* MainViewController.xib in Resources */,
 				589465201AF8765A00A1918F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,7 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5894651B1AF8765A00A1918F /* ViewController.swift in Sources */,
+				5894651B1AF8765A00A1918F /* MainViewController.swift in Sources */,
 				589465191AF8765A00A1918F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,6 +384,7 @@
 				589465341AF8765A00A1918F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		589465351AF8765A00A1918F /* Build configuration list for PBXNativeTarget "herosTests" */ = {
 			isa = XCConfigurationList;
@@ -392,6 +393,7 @@
 				589465371AF8765A00A1918F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

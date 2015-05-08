@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window!.backgroundColor = UIColor.whiteColor()
         self.window!.makeKeyAndVisible()
         //定义一个视图控制器
-        let vc = ViewController(nibName:nil, bundle: nil);
+        let vc = MainViewController(nibName:nil, bundle: nil);
         //创建导航控制器
         let nvc=UINavigationController(rootViewController:vc);
         //设置根视图
