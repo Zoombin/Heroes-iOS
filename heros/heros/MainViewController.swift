@@ -10,6 +10,9 @@ import UIKit
 
 let topScrollView = UIScrollView()
 let pageControl = UIPageControl()
+let button1 = UIButton();
+let button2 = UIButton();
+let button3 = UIButton();
 
 class MainViewController: UIViewController, UIScrollViewDelegate {
    
@@ -34,6 +37,18 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
         pageControl.numberOfPages = 3
         self.view.addSubview(pageControl)
         
+        let buttonHeight = (screenHeight - rect.height) / 3;
+        let buttonWidth = screenWidth;
+        
+        var buttons = [button1, button2, button3];
+        for index in 0...2 {
+            let button : UIButton = buttons[index]
+            let offSetY = CGRectGetMaxY(rect) + buttonHeight * CGFloat(index)
+            button.frame = CGRectMake(0, offSetY, buttonWidth, buttonHeight)
+            button.backgroundColor = UIColor .lightGrayColor()
+            button .setBackgroundImage(UIImage(named: "btn_shot"), forState: UIControlState.Normal)
+            self.view.addSubview(button)
+        }
         
     }
     
@@ -45,7 +60,6 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
     func scrollViewDidScroll(scrollView: UIScrollView) {
        let page = (scrollView.contentOffset.x / scrollView.bounds.size.width)
         pageControl.currentPage = Int(page)
-        println(pageControl.currentPage)
     }
     
 }
