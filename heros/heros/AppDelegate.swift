@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //定义一个视图控制器
         let vc = MainViewController(nibName:nil, bundle: nil);
         //创建导航控制器
-        let nvc=UINavigationController(rootViewController:vc);
+        let nvc = UINavigationController(rootViewController:vc);
         //设置根视图
         self.window!.rootViewController=nvc;
         return true
