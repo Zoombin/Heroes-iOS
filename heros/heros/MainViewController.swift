@@ -65,13 +65,13 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
             button.setBackgroundImage(UIImage(named: "btn_shot"), forState: UIControlState.Normal)
             button.tag = index
             button.setBackgroundImage(UIImage(named: "btn_shot_selected"), forState: UIControlState.Highlighted)
-            button.addTarget(self, action: "buttonClick:", forControlEvents: UIControlEvents.TouchUpInside)
+            button.addTarget(self, action: "bottomButtonClick:", forControlEvents: UIControlEvents.TouchUpInside)
             button.setTitle(titles[index], forState: UIControlState.Normal)
             self.view.addSubview(button)
         }
     }
     
-    func buttonClick(sender : UIButton) {
+    func bottomButtonClick(sender : UIButton) {
         if (sender.tag == 0) {
             
         } else if (sender.tag == 1) {

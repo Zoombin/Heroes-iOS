@@ -9,13 +9,11 @@
 /* Begin PBXBuildFile section */
 		582E8A121B02EA6600C55C85 /* bgmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A111B02EA6600C55C85 /* bgmusic.mp3 */; };
 		582E8A171B02F6CD00C55C85 /* GameRulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582E8A151B02F6CD00C55C85 /* GameRulesViewController.swift */; };
-		582E8A181B02F6CD00C55C85 /* GameRulesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A161B02F6CD00C55C85 /* GameRulesViewController.xib */; };
 		582E8A1D1B03025400C55C85 /* rule.txt in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A1C1B03025400C55C85 /* rule.txt */; };
 		589465191AF8765A00A1918F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589465181AF8765A00A1918F /* AppDelegate.swift */; };
 		5894651B1AF8765A00A1918F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5894651A1AF8765A00A1918F /* MainViewController.swift */; };
 		589465201AF8765A00A1918F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5894651F1AF8765A00A1918F /* Images.xcassets */; };
 		5894652F1AF8765A00A1918F /* herosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5894652E1AF8765A00A1918F /* herosTests.swift */; };
-		589465391AF89D3F00A1918F /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 589465381AF89D3F00A1918F /* MainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +29,6 @@
 /* Begin PBXFileReference section */
 		582E8A111B02EA6600C55C85 /* bgmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgmusic.mp3; sourceTree = "<group>"; };
 		582E8A151B02F6CD00C55C85 /* GameRulesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameRulesViewController.swift; sourceTree = "<group>"; };
-		582E8A161B02F6CD00C55C85 /* GameRulesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameRulesViewController.xib; sourceTree = "<group>"; };
 		582E8A1C1B03025400C55C85 /* rule.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rule.txt; sourceTree = "<group>"; };
 		589465131AF8765A00A1918F /* heros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = heros.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		589465171AF8765A00A1918F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,7 +38,6 @@
 		589465281AF8765A00A1918F /* herosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = herosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5894652D1AF8765A00A1918F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5894652E1AF8765A00A1918F /* herosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = herosTests.swift; sourceTree = "<group>"; };
-		589465381AF89D3F00A1918F /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,9 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				582E8A151B02F6CD00C55C85 /* GameRulesViewController.swift */,
-				582E8A161B02F6CD00C55C85 /* GameRulesViewController.xib */,
 				5894651A1AF8765A00A1918F /* MainViewController.swift */,
-				589465381AF89D3F00A1918F /* MainViewController.xib */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -209,8 +203,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				582E8A181B02F6CD00C55C85 /* GameRulesViewController.xib in Resources */,
-				589465391AF89D3F00A1918F /* MainViewController.xib in Resources */,
 				589465201AF8765A00A1918F /* Images.xcassets in Resources */,
 				582E8A121B02EA6600C55C85 /* bgmusic.mp3 in Resources */,
 				582E8A1D1B03025400C55C85 /* rule.txt in Resources */,
