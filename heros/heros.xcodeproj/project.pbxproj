@@ -10,6 +10,44 @@
 		582E8A121B02EA6600C55C85 /* bgmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A111B02EA6600C55C85 /* bgmusic.mp3 */; };
 		582E8A171B02F6CD00C55C85 /* GameRulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582E8A151B02F6CD00C55C85 /* GameRulesViewController.swift */; };
 		582E8A1D1B03025400C55C85 /* rule.txt in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A1C1B03025400C55C85 /* rule.txt */; };
+		582E8A431B031E5800C55C85 /* clever_s.txt in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A1F1B031E5800C55C85 /* clever_s.txt */; };
+		582E8A441B031E5800C55C85 /* clever.txt in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A201B031E5800C55C85 /* clever.txt */; };
+		582E8A451B031E5800C55C85 /* drug_s.txt in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A211B031E5800C55C85 /* drug_s.txt */; };
+		582E8A461B031E5800C55C85 /* drug.txt in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A221B031E5800C55C85 /* drug.txt */; };
+		582E8A471B031E5800C55C85 /* guize.txt in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A231B031E5800C55C85 /* guize.txt */; };
+		582E8A481B031E5800C55C85 /* hero_cate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A241B031E5800C55C85 /* hero_cate.txt */; };
+		582E8A491B031E5800C55C85 /* hero_jiqiao.txt in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A251B031E5800C55C85 /* hero_jiqiao.txt */; };
+		582E8A4A1B031E5800C55C85 /* hero_liliang.txt in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A261B031E5800C55C85 /* hero_liliang.txt */; };
+		582E8A4B1B031E5800C55C85 /* hero_sudu.txt in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A271B031E5800C55C85 /* hero_sudu.txt */; };
+		582E8A4C1B031E5800C55C85 /* hero_zhenqi.txt in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A281B031E5800C55C85 /* hero_zhenqi.txt */; };
+		582E8A4D1B031E5800C55C85 /* identity_s.txt in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A291B031E5800C55C85 /* identity_s.txt */; };
+		582E8A4E1B031E5800C55C85 /* identity.txt in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A2A1B031E5800C55C85 /* identity.txt */; };
+		582E8A4F1B031E5800C55C85 /* image_cate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A2B1B031E5800C55C85 /* image_cate.txt */; };
+		582E8A501B031E5800C55C85 /* magic_cate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A2C1B031E5800C55C85 /* magic_cate.txt */; };
+		582E8A511B031E5800C55C85 /* magic_neigong_s.txt in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A2D1B031E5800C55C85 /* magic_neigong_s.txt */; };
+		582E8A521B031E5800C55C85 /* magic_neigong.txt in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A2E1B031E5800C55C85 /* magic_neigong.txt */; };
+		582E8A531B031E5800C55C85 /* magic_qinggong_s.txt in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A2F1B031E5800C55C85 /* magic_qinggong_s.txt */; };
+		582E8A541B031E5800C55C85 /* magic_qinggong.txt in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A301B031E5800C55C85 /* magic_qinggong.txt */; };
+		582E8A551B031E5800C55C85 /* magic_s.txt in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A311B031E5800C55C85 /* magic_s.txt */; };
+		582E8A561B031E5800C55C85 /* magic_xinfa_s.txt in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A321B031E5800C55C85 /* magic_xinfa_s.txt */; };
+		582E8A571B031E5800C55C85 /* magic_xinfa.txt in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A331B031E5800C55C85 /* magic_xinfa.txt */; };
+		582E8A581B031E5800C55C85 /* magic.txt in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A341B031E5800C55C85 /* magic.txt */; };
+		582E8A591B031E5800C55C85 /* moves_cate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A351B031E5800C55C85 /* moves_cate.txt */; };
+		582E8A5A1B031E5800C55C85 /* moves_ji_s.txt in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A361B031E5800C55C85 /* moves_ji_s.txt */; };
+		582E8A5B1B031E5800C55C85 /* moves_ji.txt in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A371B031E5800C55C85 /* moves_ji.txt */; };
+		582E8A5C1B031E5800C55C85 /* moves_li_s.txt in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A381B031E5800C55C85 /* moves_li_s.txt */; };
+		582E8A5D1B031E5800C55C85 /* moves_li.txt in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A391B031E5800C55C85 /* moves_li.txt */; };
+		582E8A5E1B031E5800C55C85 /* moves_qi_s.txt in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A3A1B031E5800C55C85 /* moves_qi_s.txt */; };
+		582E8A5F1B031E5800C55C85 /* moves_qi.txt in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A3B1B031E5800C55C85 /* moves_qi.txt */; };
+		582E8A601B031E5800C55C85 /* moves_s.txt in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A3C1B031E5800C55C85 /* moves_s.txt */; };
+		582E8A611B031E5800C55C85 /* moves_su_s.txt in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A3D1B031E5800C55C85 /* moves_su_s.txt */; };
+		582E8A621B031E5800C55C85 /* moves_su.txt in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A3E1B031E5800C55C85 /* moves_su.txt */; };
+		582E8A631B031E5800C55C85 /* moves.txt in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A3F1B031E5800C55C85 /* moves.txt */; };
+		582E8A641B031E5800C55C85 /* shero.txt in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A401B031E5800C55C85 /* shero.txt */; };
+		582E8A651B031E5800C55C85 /* version.txt in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A411B031E5800C55C85 /* version.txt */; };
+		582E8A661B031E5800C55C85 /* weapon.txt in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A421B031E5800C55C85 /* weapon.txt */; };
+		582E8A681B031E9200C55C85 /* CardsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582E8A671B031E9200C55C85 /* CardsListViewController.swift */; };
+		582E8A6A1B031E9E00C55C85 /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582E8A691B031E9E00C55C85 /* CardDetailViewController.swift */; };
 		589465191AF8765A00A1918F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589465181AF8765A00A1918F /* AppDelegate.swift */; };
 		5894651B1AF8765A00A1918F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5894651A1AF8765A00A1918F /* MainViewController.swift */; };
 		589465201AF8765A00A1918F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5894651F1AF8765A00A1918F /* Images.xcassets */; };
@@ -30,6 +68,44 @@
 		582E8A111B02EA6600C55C85 /* bgmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgmusic.mp3; sourceTree = "<group>"; };
 		582E8A151B02F6CD00C55C85 /* GameRulesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameRulesViewController.swift; sourceTree = "<group>"; };
 		582E8A1C1B03025400C55C85 /* rule.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rule.txt; sourceTree = "<group>"; };
+		582E8A1F1B031E5800C55C85 /* clever_s.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = clever_s.txt; sourceTree = "<group>"; };
+		582E8A201B031E5800C55C85 /* clever.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = clever.txt; sourceTree = "<group>"; };
+		582E8A211B031E5800C55C85 /* drug_s.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = drug_s.txt; sourceTree = "<group>"; };
+		582E8A221B031E5800C55C85 /* drug.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = drug.txt; sourceTree = "<group>"; };
+		582E8A231B031E5800C55C85 /* guize.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = guize.txt; sourceTree = "<group>"; };
+		582E8A241B031E5800C55C85 /* hero_cate.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hero_cate.txt; sourceTree = "<group>"; };
+		582E8A251B031E5800C55C85 /* hero_jiqiao.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hero_jiqiao.txt; sourceTree = "<group>"; };
+		582E8A261B031E5800C55C85 /* hero_liliang.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hero_liliang.txt; sourceTree = "<group>"; };
+		582E8A271B031E5800C55C85 /* hero_sudu.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hero_sudu.txt; sourceTree = "<group>"; };
+		582E8A281B031E5800C55C85 /* hero_zhenqi.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hero_zhenqi.txt; sourceTree = "<group>"; };
+		582E8A291B031E5800C55C85 /* identity_s.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = identity_s.txt; sourceTree = "<group>"; };
+		582E8A2A1B031E5800C55C85 /* identity.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = identity.txt; sourceTree = "<group>"; };
+		582E8A2B1B031E5800C55C85 /* image_cate.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = image_cate.txt; sourceTree = "<group>"; };
+		582E8A2C1B031E5800C55C85 /* magic_cate.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = magic_cate.txt; sourceTree = "<group>"; };
+		582E8A2D1B031E5800C55C85 /* magic_neigong_s.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = magic_neigong_s.txt; sourceTree = "<group>"; };
+		582E8A2E1B031E5800C55C85 /* magic_neigong.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = magic_neigong.txt; sourceTree = "<group>"; };
+		582E8A2F1B031E5800C55C85 /* magic_qinggong_s.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = magic_qinggong_s.txt; sourceTree = "<group>"; };
+		582E8A301B031E5800C55C85 /* magic_qinggong.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = magic_qinggong.txt; sourceTree = "<group>"; };
+		582E8A311B031E5800C55C85 /* magic_s.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = magic_s.txt; sourceTree = "<group>"; };
+		582E8A321B031E5800C55C85 /* magic_xinfa_s.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = magic_xinfa_s.txt; sourceTree = "<group>"; };
+		582E8A331B031E5800C55C85 /* magic_xinfa.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = magic_xinfa.txt; sourceTree = "<group>"; };
+		582E8A341B031E5800C55C85 /* magic.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = magic.txt; sourceTree = "<group>"; };
+		582E8A351B031E5800C55C85 /* moves_cate.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = moves_cate.txt; sourceTree = "<group>"; };
+		582E8A361B031E5800C55C85 /* moves_ji_s.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = moves_ji_s.txt; sourceTree = "<group>"; };
+		582E8A371B031E5800C55C85 /* moves_ji.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = moves_ji.txt; sourceTree = "<group>"; };
+		582E8A381B031E5800C55C85 /* moves_li_s.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = moves_li_s.txt; sourceTree = "<group>"; };
+		582E8A391B031E5800C55C85 /* moves_li.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = moves_li.txt; sourceTree = "<group>"; };
+		582E8A3A1B031E5800C55C85 /* moves_qi_s.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = moves_qi_s.txt; sourceTree = "<group>"; };
+		582E8A3B1B031E5800C55C85 /* moves_qi.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = moves_qi.txt; sourceTree = "<group>"; };
+		582E8A3C1B031E5800C55C85 /* moves_s.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = moves_s.txt; sourceTree = "<group>"; };
+		582E8A3D1B031E5800C55C85 /* moves_su_s.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = moves_su_s.txt; sourceTree = "<group>"; };
+		582E8A3E1B031E5800C55C85 /* moves_su.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = moves_su.txt; sourceTree = "<group>"; };
+		582E8A3F1B031E5800C55C85 /* moves.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = moves.txt; sourceTree = "<group>"; };
+		582E8A401B031E5800C55C85 /* shero.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shero.txt; sourceTree = "<group>"; };
+		582E8A411B031E5800C55C85 /* version.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = version.txt; sourceTree = "<group>"; };
+		582E8A421B031E5800C55C85 /* weapon.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = weapon.txt; sourceTree = "<group>"; };
+		582E8A671B031E9200C55C85 /* CardsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsListViewController.swift; sourceTree = "<group>"; };
+		582E8A691B031E9E00C55C85 /* CardDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
 		589465131AF8765A00A1918F /* heros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = heros.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		589465171AF8765A00A1918F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		589465181AF8765A00A1918F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,8 +139,53 @@
 			children = (
 				582E8A151B02F6CD00C55C85 /* GameRulesViewController.swift */,
 				5894651A1AF8765A00A1918F /* MainViewController.swift */,
+				582E8A671B031E9200C55C85 /* CardsListViewController.swift */,
+				582E8A691B031E9E00C55C85 /* CardDetailViewController.swift */,
 			);
 			name = UI;
+			sourceTree = "<group>";
+		};
+		582E8A1E1B031E4700C55C85 /* files */ = {
+			isa = PBXGroup;
+			children = (
+				582E8A1F1B031E5800C55C85 /* clever_s.txt */,
+				582E8A201B031E5800C55C85 /* clever.txt */,
+				582E8A211B031E5800C55C85 /* drug_s.txt */,
+				582E8A221B031E5800C55C85 /* drug.txt */,
+				582E8A231B031E5800C55C85 /* guize.txt */,
+				582E8A241B031E5800C55C85 /* hero_cate.txt */,
+				582E8A251B031E5800C55C85 /* hero_jiqiao.txt */,
+				582E8A261B031E5800C55C85 /* hero_liliang.txt */,
+				582E8A271B031E5800C55C85 /* hero_sudu.txt */,
+				582E8A281B031E5800C55C85 /* hero_zhenqi.txt */,
+				582E8A291B031E5800C55C85 /* identity_s.txt */,
+				582E8A2A1B031E5800C55C85 /* identity.txt */,
+				582E8A2B1B031E5800C55C85 /* image_cate.txt */,
+				582E8A2C1B031E5800C55C85 /* magic_cate.txt */,
+				582E8A2D1B031E5800C55C85 /* magic_neigong_s.txt */,
+				582E8A2E1B031E5800C55C85 /* magic_neigong.txt */,
+				582E8A2F1B031E5800C55C85 /* magic_qinggong_s.txt */,
+				582E8A301B031E5800C55C85 /* magic_qinggong.txt */,
+				582E8A311B031E5800C55C85 /* magic_s.txt */,
+				582E8A321B031E5800C55C85 /* magic_xinfa_s.txt */,
+				582E8A331B031E5800C55C85 /* magic_xinfa.txt */,
+				582E8A341B031E5800C55C85 /* magic.txt */,
+				582E8A351B031E5800C55C85 /* moves_cate.txt */,
+				582E8A361B031E5800C55C85 /* moves_ji_s.txt */,
+				582E8A371B031E5800C55C85 /* moves_ji.txt */,
+				582E8A381B031E5800C55C85 /* moves_li_s.txt */,
+				582E8A391B031E5800C55C85 /* moves_li.txt */,
+				582E8A3A1B031E5800C55C85 /* moves_qi_s.txt */,
+				582E8A3B1B031E5800C55C85 /* moves_qi.txt */,
+				582E8A3C1B031E5800C55C85 /* moves_s.txt */,
+				582E8A3D1B031E5800C55C85 /* moves_su_s.txt */,
+				582E8A3E1B031E5800C55C85 /* moves_su.txt */,
+				582E8A3F1B031E5800C55C85 /* moves.txt */,
+				582E8A401B031E5800C55C85 /* shero.txt */,
+				582E8A411B031E5800C55C85 /* version.txt */,
+				582E8A421B031E5800C55C85 /* weapon.txt */,
+			);
+			name = files;
 			sourceTree = "<group>";
 		};
 		5894650A1AF8765A00A1918F = {
@@ -99,6 +220,7 @@
 		589465161AF8765A00A1918F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				582E8A1E1B031E4700C55C85 /* files */,
 				582E8A1C1B03025400C55C85 /* rule.txt */,
 				582E8A111B02EA6600C55C85 /* bgmusic.mp3 */,
 				589465171AF8765A00A1918F /* Info.plist */,
@@ -203,9 +325,45 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				582E8A451B031E5800C55C85 /* drug_s.txt in Resources */,
 				589465201AF8765A00A1918F /* Images.xcassets in Resources */,
+				582E8A431B031E5800C55C85 /* clever_s.txt in Resources */,
+				582E8A471B031E5800C55C85 /* guize.txt in Resources */,
+				582E8A5D1B031E5800C55C85 /* moves_li.txt in Resources */,
+				582E8A521B031E5800C55C85 /* magic_neigong.txt in Resources */,
+				582E8A561B031E5800C55C85 /* magic_xinfa_s.txt in Resources */,
+				582E8A481B031E5800C55C85 /* hero_cate.txt in Resources */,
+				582E8A4B1B031E5800C55C85 /* hero_sudu.txt in Resources */,
+				582E8A611B031E5800C55C85 /* moves_su_s.txt in Resources */,
+				582E8A4E1B031E5800C55C85 /* identity.txt in Resources */,
+				582E8A641B031E5800C55C85 /* shero.txt in Resources */,
+				582E8A661B031E5800C55C85 /* weapon.txt in Resources */,
+				582E8A4D1B031E5800C55C85 /* identity_s.txt in Resources */,
+				582E8A541B031E5800C55C85 /* magic_qinggong.txt in Resources */,
+				582E8A491B031E5800C55C85 /* hero_jiqiao.txt in Resources */,
+				582E8A531B031E5800C55C85 /* magic_qinggong_s.txt in Resources */,
 				582E8A121B02EA6600C55C85 /* bgmusic.mp3 in Resources */,
+				582E8A651B031E5800C55C85 /* version.txt in Resources */,
+				582E8A5B1B031E5800C55C85 /* moves_ji.txt in Resources */,
+				582E8A511B031E5800C55C85 /* magic_neigong_s.txt in Resources */,
 				582E8A1D1B03025400C55C85 /* rule.txt in Resources */,
+				582E8A4F1B031E5800C55C85 /* image_cate.txt in Resources */,
+				582E8A501B031E5800C55C85 /* magic_cate.txt in Resources */,
+				582E8A5E1B031E5800C55C85 /* moves_qi_s.txt in Resources */,
+				582E8A581B031E5800C55C85 /* magic.txt in Resources */,
+				582E8A4A1B031E5800C55C85 /* hero_liliang.txt in Resources */,
+				582E8A621B031E5800C55C85 /* moves_su.txt in Resources */,
+				582E8A5C1B031E5800C55C85 /* moves_li_s.txt in Resources */,
+				582E8A601B031E5800C55C85 /* moves_s.txt in Resources */,
+				582E8A571B031E5800C55C85 /* magic_xinfa.txt in Resources */,
+				582E8A551B031E5800C55C85 /* magic_s.txt in Resources */,
+				582E8A631B031E5800C55C85 /* moves.txt in Resources */,
+				582E8A591B031E5800C55C85 /* moves_cate.txt in Resources */,
+				582E8A5A1B031E5800C55C85 /* moves_ji_s.txt in Resources */,
+				582E8A441B031E5800C55C85 /* clever.txt in Resources */,
+				582E8A5F1B031E5800C55C85 /* moves_qi.txt in Resources */,
+				582E8A461B031E5800C55C85 /* drug.txt in Resources */,
+				582E8A4C1B031E5800C55C85 /* hero_zhenqi.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +381,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				582E8A6A1B031E9E00C55C85 /* CardDetailViewController.swift in Sources */,
+				582E8A681B031E9200C55C85 /* CardsListViewController.swift in Sources */,
 				582E8A171B02F6CD00C55C85 /* GameRulesViewController.swift in Sources */,
 				5894651B1AF8765A00A1918F /* MainViewController.swift in Sources */,
 				589465191AF8765A00A1918F /* AppDelegate.swift in Sources */,

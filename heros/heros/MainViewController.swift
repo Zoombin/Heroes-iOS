@@ -21,6 +21,7 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
         super.viewDidLoad()
         self.title = "请左右滑动选择大侠类型"
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(named: "main_nav_bg"), forBarMetrics: UIBarMetrics.Default)
+        self.view.backgroundColor = UIColor(red: 217/255.0, green: 194/255.0, blue: 150/255.0, alpha: 1.0)
         
         let navigationTitleAttribute : NSDictionary = NSDictionary(objectsAndKeys: UIColor.whiteColor(),NSForegroundColorAttributeName)
         self.navigationController?.navigationBar.titleTextAttributes = navigationTitleAttribute
@@ -31,7 +32,7 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
         let rect = CGRectMake(0, 0, screenWidth, screenHeight * 2/3)
         
         topScrollView.frame = rect
-        topScrollView.backgroundColor = UIColor .lightGrayColor()
+        topScrollView.backgroundColor = UIColor.clearColor()
         topScrollView.contentSize = CGSizeMake(screenWidth * 4, 0)
         topScrollView.pagingEnabled = true
         topScrollView.delegate = self
@@ -43,7 +44,9 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
             let button : UIButton = UIButton()
             button.frame = CGRectMake(offSetX, 0, rect.width, rect.height)
             button.backgroundColor = UIColor .lightGrayColor()
+            button.tag = index
             button.setBackgroundImage(UIImage(named: topTitles[index]), forState: UIControlState.Normal)
+            button.addTarget(self, action: "topButtonClick:", forControlEvents: UIControlEvents.TouchUpInside)
             topScrollView.addSubview(button)
         }
         
@@ -55,13 +58,12 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
         let buttonHeight = (screenHeight - rect.height) / 3;
         let buttonWidth = screenWidth;
         
-        var buttons = [button1, button2, button3];
         var titles = ["游戏卡牌", "游戏规则", "武器"];
         for index in 0...2 {
-            let button : UIButton = buttons[index]
+            let button : UIButton = UIButton()
             let offSetY = CGRectGetMaxY(rect) + buttonHeight * CGFloat(index)
             button.frame = CGRectMake(0, offSetY, buttonWidth, buttonHeight)
-            button.backgroundColor = UIColor .lightGrayColor()
+            button.backgroundColor = UIColor.clearColor()
             button.setBackgroundImage(UIImage(named: "btn_shot"), forState: UIControlState.Normal)
             button.tag = index
             button.setBackgroundImage(UIImage(named: "btn_shot_selected"), forState: UIControlState.Highlighted)
@@ -69,6 +71,25 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
             button.setTitle(titles[index], forState: UIControlState.Normal)
             self.view.addSubview(button)
         }
+    }
+    
+    func topButtonClick(sender : UIButton) {
+        let topTitles = ["hero_type_liliang", "hero_type_jiqiao", "hero_type_sudu", "hero_type_zhenqi"]
+        let cardsListVC = CardsListViewController()
+        if (sender.tag == 0) {
+            cardsListVC.title = "力量大侠"
+            cardsListVC.setFileName(topTitles[0])
+        } else if (sender.tag == 1) {
+            cardsListVC.title = "技巧大侠"
+            cardsListVC.setFileName(topTitles[1])
+        } else if (sender.tag == 2) {
+            cardsListVC.title = "速度大侠"
+            cardsListVC.setFileName(topTitles[2])
+        } else if (sender.tag == 3) {
+            cardsListVC.title = "真气大侠"
+            cardsListVC.setFileName(topTitles[3])
+        }
+        self.navigationController?.pushViewController(cardsListVC, animated: true)
     }
     
     func bottomButtonClick(sender : UIButton) {
