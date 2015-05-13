@@ -76,6 +76,20 @@ class CardTypeViewController: UIViewController {
     func showDetail(sender : UIButton) {
         let cardTypeVC = CardTypeViewController()
         let info : NSDictionary = cardsArray.objectAtIndex(sender.tag) as NSDictionary
+        let name : NSString = info.objectForKey("name") as NSString
+        var fileName : NSString = ""
+        var showDetail : Bool = true
+        if (name.isEqualToString("身份牌")) {
+           fileName = "identity"
+        } else if (name.isEqualToString("招式牌")) {
+            
+        } else if (name.isEqualToString("功法牌")) {
+            
+        } else if (name.isEqualToString("智计牌")) {
+            
+        } else if (name.isEqualToString("智计牌")) {
+            
+        }
         cardTypeVC.setFileName("image_cate")
         cardTypeVC.title = info.objectForKey("name") as NSString
         self.navigationController?.pushViewController(cardTypeVC, animated: true)
