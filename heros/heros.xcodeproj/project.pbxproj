@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5823D2401B0345260006CEA8 /* CardTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5823D23F1B0345260006CEA8 /* CardTypeViewController.swift */; };
 		582E8A121B02EA6600C55C85 /* bgmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A111B02EA6600C55C85 /* bgmusic.mp3 */; };
 		582E8A171B02F6CD00C55C85 /* GameRulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582E8A151B02F6CD00C55C85 /* GameRulesViewController.swift */; };
 		582E8A1D1B03025400C55C85 /* rule.txt in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A1C1B03025400C55C85 /* rule.txt */; };
@@ -65,6 +66,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5823D23F1B0345260006CEA8 /* CardTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTypeViewController.swift; sourceTree = "<group>"; };
 		582E8A111B02EA6600C55C85 /* bgmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgmusic.mp3; sourceTree = "<group>"; };
 		582E8A151B02F6CD00C55C85 /* GameRulesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameRulesViewController.swift; sourceTree = "<group>"; };
 		582E8A1C1B03025400C55C85 /* rule.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rule.txt; sourceTree = "<group>"; };
@@ -137,10 +139,11 @@
 		582E8A191B02F6FF00C55C85 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				582E8A691B031E9E00C55C85 /* CardDetailViewController.swift */,
+				582E8A671B031E9200C55C85 /* CardsListViewController.swift */,
+				5823D23F1B0345260006CEA8 /* CardTypeViewController.swift */,
 				582E8A151B02F6CD00C55C85 /* GameRulesViewController.swift */,
 				5894651A1AF8765A00A1918F /* MainViewController.swift */,
-				582E8A671B031E9200C55C85 /* CardsListViewController.swift */,
-				582E8A691B031E9E00C55C85 /* CardDetailViewController.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 				582E8A681B031E9200C55C85 /* CardsListViewController.swift in Sources */,
 				582E8A171B02F6CD00C55C85 /* GameRulesViewController.swift in Sources */,
 				5894651B1AF8765A00A1918F /* MainViewController.swift in Sources */,
+				5823D2401B0345260006CEA8 /* CardTypeViewController.swift in Sources */,
 				589465191AF8765A00A1918F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

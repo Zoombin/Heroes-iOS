@@ -94,7 +94,10 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
     
     func bottomButtonClick(sender : UIButton) {
         if (sender.tag == 0) {
-            
+            let cardTypeVC = CardTypeViewController()
+            cardTypeVC.cardFile = "version"
+            cardTypeVC.title = "游戏卡牌"
+            self.navigationController?.pushViewController(cardTypeVC, animated: true)
         } else if (sender.tag == 1) {
             let gameRulesVC = GameRulesViewController()
             self.navigationController?.pushViewController(gameRulesVC, animated: true)
