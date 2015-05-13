@@ -99,7 +99,10 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
             let gameRulesVC = GameRulesViewController()
             self.navigationController?.pushViewController(gameRulesVC, animated: true)
         } else if (sender.tag == 2) {
-            
+            let cardsListVC = CardsListViewController()
+            cardsListVC.title = "武器列表"
+            cardsListVC.setFileName("weapon")
+            self.navigationController?.pushViewController(cardsListVC, animated: true)
         }
     }
     
