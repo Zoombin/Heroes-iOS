@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 let topScrollView = UIScrollView()
 let pageControl = UIPageControl()
@@ -67,7 +68,6 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
             button.setTitle(titles[index], forState: UIControlState.Normal)
             self.view.addSubview(button)
         }
-        
     }
     
     func buttonClick(sender : UIButton) {

@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import AVFoundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    var audioPlayer: AVAudioPlayer!
     var window: UIWindow?
 
 
@@ -25,8 +26,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //创建导航控制器
         let nvc = UINavigationController(rootViewController:vc);
         //设置根视图
-        self.window!.rootViewController=nvc;
+        self.window!.rootViewController = nvc;
+        playBgMusic()
         return true
+    }
+    
+    func playBgMusic(){
+        let musicPath = NSBundle.mainBundle().pathForResource("bgmusic", ofType: "mp3")
+        //指定音乐路径
+        let url = NSURL(fileURLWithPath: musicPath!)
+        audioPlayer = AVAudioPlayer(contentsOfURL: url, error: nil)
+        audioPlayer.numberOfLoops = -1
+        //设置音乐播放次数，-1为循环播放
+        audioPlayer.volume = 1
+        //设置音乐音量，可用范围为0~1
+        audioPlayer.prepareToPlay()
+        audioPlayer.play()
     }
 
     func applicationWillResignActive(application: UIApplication) {
@@ -37,6 +52,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        if audioPlayer.playing {
+            audioPlayer.stop()
+        }
     }
 
     func applicationWillEnterForeground(application: UIApplication) {
@@ -45,6 +63,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        if !audioPlayer.playing {
+            audioPlayer.play()
+        }
     }
 
     func applicationWillTerminate(application: UIApplication) {

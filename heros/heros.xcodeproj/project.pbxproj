@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		582E8A121B02EA6600C55C85 /* bgmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A111B02EA6600C55C85 /* bgmusic.mp3 */; };
 		589465191AF8765A00A1918F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589465181AF8765A00A1918F /* AppDelegate.swift */; };
 		5894651B1AF8765A00A1918F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5894651A1AF8765A00A1918F /* MainViewController.swift */; };
 		589465201AF8765A00A1918F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5894651F1AF8765A00A1918F /* Images.xcassets */; };
@@ -25,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		582E8A111B02EA6600C55C85 /* bgmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgmusic.mp3; sourceTree = "<group>"; };
 		589465131AF8765A00A1918F /* heros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = heros.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		589465171AF8765A00A1918F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		589465181AF8765A00A1918F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 		589465161AF8765A00A1918F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				582E8A111B02EA6600C55C85 /* bgmusic.mp3 */,
 				589465171AF8765A00A1918F /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -191,6 +194,7 @@
 			files = (
 				589465391AF89D3F00A1918F /* MainViewController.xib in Resources */,
 				589465201AF8765A00A1918F /* Images.xcassets in Resources */,
+				582E8A121B02EA6600C55C85 /* bgmusic.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
