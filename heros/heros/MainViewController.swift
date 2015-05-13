@@ -63,6 +63,7 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
             button.frame = CGRectMake(0, offSetY, buttonWidth, buttonHeight)
             button.backgroundColor = UIColor .lightGrayColor()
             button.setBackgroundImage(UIImage(named: "btn_shot"), forState: UIControlState.Normal)
+            button.tag = index
             button.setBackgroundImage(UIImage(named: "btn_shot_selected"), forState: UIControlState.Highlighted)
             button.addTarget(self, action: "buttonClick:", forControlEvents: UIControlEvents.TouchUpInside)
             button.setTitle(titles[index], forState: UIControlState.Normal)
@@ -71,7 +72,14 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
     }
     
     func buttonClick(sender : UIButton) {
-        
+        if (sender.tag == 0) {
+            
+        } else if (sender.tag == 1) {
+            let gameRulesVC = GameRulesViewController()
+            self.navigationController?.pushViewController(gameRulesVC, animated: true)
+        } else if (sender.tag == 2) {
+            
+        }
     }
     
     override func didReceiveMemoryWarning() {
