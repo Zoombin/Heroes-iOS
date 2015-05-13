@@ -32,13 +32,6 @@ class CardTypeViewController: UIViewController {
         let buttonHeight = (screenHeight - rect.height) / 3;
         let buttonWidth = screenWidth;
         
-        let count = cardsArray.count
-        let scrollView = UIScrollView()
-        scrollView.frame = CGRectMake(0, 0, screenWidth, screenHeight)
-        scrollView.backgroundColor = UIColor.clearColor()
-        scrollView.contentSize = CGSizeMake(0, CGFloat(count) * buttonHeight)
-        self.view.addSubview(scrollView)
-        
         let topImageView : UIImageView = UIImageView()
         topImageView.frame = CGRectMake(0, 0, screenWidth, screenHeight / 2)
         topImageView.image = UIImage(named: "card_outside")
@@ -53,11 +46,18 @@ class CardTypeViewController: UIViewController {
         titleLabel.textAlignment = NSTextAlignment.Center
         self.view.addSubview(titleLabel)
         
+        let count = cardsArray.count
+        let scrollView = UIScrollView()
+        scrollView.frame = CGRectMake(0, screenHeight / 2, screenWidth, screenHeight / 2)
+        scrollView.backgroundColor = UIColor.clearColor()
+        scrollView.contentSize = CGSizeMake(0, CGFloat(count) * buttonHeight)
+        self.view.addSubview(scrollView)
+        
         for index in 0...(count - 1) {
             let info = cardsArray.objectAtIndex(index) as NSDictionary
             let name = info.objectForKey("name") as NSString
             let button : UIButton = UIButton()
-            let offSetY = screenHeight / 2 + buttonHeight * CGFloat(index)
+            let offSetY = buttonHeight * CGFloat(index)
             button.frame = CGRectMake(0, offSetY, buttonWidth, buttonHeight)
             button.backgroundColor = UIColor.clearColor()
             button.setBackgroundImage(UIImage(named: "btn_shot"), forState: UIControlState.Normal)
@@ -74,7 +74,11 @@ class CardTypeViewController: UIViewController {
     }
     
     func showDetail(sender : UIButton) {
-
+        let cardTypeVC = CardTypeViewController()
+        let info : NSDictionary = cardsArray.objectAtIndex(sender.tag) as NSDictionary
+        cardTypeVC.setFileName("image_cate")
+        cardTypeVC.title = info.objectForKey("name") as NSString
+        self.navigationController?.pushViewController(cardTypeVC, animated: true)
     }
     
     override func didReceiveMemoryWarning() {
