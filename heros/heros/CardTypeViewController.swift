@@ -12,6 +12,7 @@ class CardTypeViewController: UIViewController {
     
     var cardFile : NSString = ""
     var cardsArray : NSArray = NSArray()
+    var isBase : Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +25,7 @@ class CardTypeViewController: UIViewController {
         
         let data = txtString?.dataUsingEncoding(NSUTF8StringEncoding)
         cardsArray = NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers, error: nil) as NSArray
-
+        
         
         let screenWidth = UIScreen .mainScreen().bounds.size.width
         let screenHeight = UIScreen .mainScreen().bounds.size.height - 64
@@ -78,19 +79,97 @@ class CardTypeViewController: UIViewController {
         let info : NSDictionary = cardsArray.objectAtIndex(sender.tag) as NSDictionary
         let name : NSString = info.objectForKey("name") as NSString
         var fileName : NSString = ""
-        var showDetail : Bool = true
-        if (name.isEqualToString("身份牌")) {
-           fileName = "identity"
+        var showDetail : Bool = false
+        if (name.isEqualToString("基础版")) {
+            fileName = "image_cate"
+            isBase = true
+        } else if (name.isEqualToString("标准版")) {
+            fileName = "image_cate"
+            isBase = false
+        } else if (name.isEqualToString("身份牌")) {
+            showDetail = true
+            if (isBase) {
+                fileName = "identity_s"
+            } else {
+                fileName = "identity"
+            }
         } else if (name.isEqualToString("招式牌")) {
-            
+            fileName = "moves_cate"
         } else if (name.isEqualToString("功法牌")) {
-            
+            fileName = "magic_cate"
         } else if (name.isEqualToString("智计牌")) {
-            
-        } else if (name.isEqualToString("智计牌")) {
-            
+            showDetail = true
+            if (isBase) {
+                fileName = "clever_s"
+            } else {
+                fileName = "clever"
+            }
+        } else if (name.isEqualToString("药牌")) {
+            showDetail = true
+            if (isBase) {
+                fileName = "drug_s"
+            } else {
+                fileName = "drug"
+            }
+        } else if (name.isEqualToString("力属性")) {
+            showDetail = true
+            if (isBase) {
+                fileName = "moves_li_s"
+            } else {
+                fileName = "moves_li"
+            }
+        } else if (name.isEqualToString("技属性")) {
+            showDetail = true
+            if (isBase) {
+                fileName = "moves_ji_s"
+            } else {
+                fileName = "moves_ji"
+            }
+        } else if (name.isEqualToString("气属性")) {
+            showDetail = true
+            if (isBase) {
+                fileName = "moves_qi_s"
+            } else {
+                fileName = "moves_qi"
+            }
+        } else if (name.isEqualToString("速属性")) {
+            showDetail = true
+            if (isBase) {
+                fileName = "moves_su_s"
+            } else {
+                fileName = "moves_su"
+            }
+        } else if (name.isEqualToString("内功牌")) {
+            showDetail = true
+            if (isBase) {
+                fileName = "magic_neigong_s"
+            } else {
+                fileName = "magic_neigong"
+            }
+        } else if (name.isEqualToString("轻功牌")) {
+            showDetail = true
+            if (isBase) {
+                fileName = "magic_qinggong_s"
+            } else {
+                fileName = "magic_qinggong"
+            }
+        } else if (name.isEqualToString("心法牌")) {
+            showDetail = true
+            if (isBase) {
+                fileName = "magic_xinfa_s"
+            } else {
+                fileName = "magic_xinfa"
+            }
         }
-        cardTypeVC.setFileName("image_cate")
+        if (showDetail) {
+            let cardsListVC = CardsListViewController()
+            cardsListVC.setFileName(fileName)
+            cardsListVC.title = name
+            self.navigationController?.pushViewController(cardsListVC, animated: true)
+            return
+        }
+        cardTypeVC.setFileName(fileName)
+        cardTypeVC.isBase = isBase
         cardTypeVC.title = info.objectForKey("name") as NSString
         self.navigationController?.pushViewController(cardTypeVC, animated: true)
     }
@@ -100,15 +179,4 @@ class CardTypeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
