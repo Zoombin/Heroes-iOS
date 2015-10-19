@@ -23,8 +23,8 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(named: "main_nav_bg"), forBarMetrics: UIBarMetrics.Default)
         self.view.backgroundColor = UIColor(red: 217/255.0, green: 194/255.0, blue: 150/255.0, alpha: 1.0)
         
-        let navigationTitleAttribute : NSDictionary = NSDictionary(objectsAndKeys: UIColor.whiteColor(),NSForegroundColorAttributeName)
-        self.navigationController?.navigationBar.titleTextAttributes = navigationTitleAttribute
+        let navigationTitleAttribute : NSDictionary = NSDictionary(object: UIColor.whiteColor(),forKey: NSForegroundColorAttributeName)
+        self.navigationController?.navigationBar.titleTextAttributes = navigationTitleAttribute as! [String : AnyObject]
         
         let screenWidth = UIScreen .mainScreen().bounds.size.width
         let screenHeight = UIScreen .mainScreen().bounds.size.height - 64

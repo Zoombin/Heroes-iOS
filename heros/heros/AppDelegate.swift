@@ -36,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let musicPath = NSBundle.mainBundle().pathForResource("bgmusic", ofType: "mp3")
         //指定音乐路径
         let url = NSURL(fileURLWithPath: musicPath!)
-        audioPlayer = AVAudioPlayer(contentsOfURL: url, error: nil)
+        audioPlayer = try? AVAudioPlayer(contentsOfURL: url)
         audioPlayer.numberOfLoops = -1
         //设置音乐播放次数，-1为循环播放
         audioPlayer.volume = 1

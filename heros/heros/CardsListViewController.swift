@@ -15,14 +15,14 @@ class CardsListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(red: 217/255.0, green: 194/255.0, blue: 150/255.0, alpha: 1.0)
-        println(cardFile)
+        print(cardFile)
         cardFile = cardFile.stringByReplacingOccurrencesOfString("_type", withString: "")
-        let filePath = NSBundle.mainBundle().pathForResource(cardFile, ofType: "txt")
-        let txtString = NSString(contentsOfFile: filePath!, encoding: NSUTF8StringEncoding, error: nil)
-        println(txtString)
+        let filePath = NSBundle.mainBundle().pathForResource(cardFile as String, ofType: "txt")
+        let txtString = try? NSString(contentsOfFile: filePath!, encoding: NSUTF8StringEncoding)
+        print(txtString)
         
         let data = txtString?.dataUsingEncoding(NSUTF8StringEncoding)
-        cardsArray = NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers, error: nil) as NSArray
+        cardsArray = try! NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers) as! NSArray
         
         let screenWidth = UIScreen .mainScreen().bounds.size.width
         let screenHeight = UIScreen .mainScreen().bounds.size.height - 64
@@ -39,15 +39,15 @@ class CardsListViewController: UIViewController {
         
         
         for index in 0...(count - 1) {
-            let info = cardsArray.objectAtIndex(index) as NSDictionary
-            let name = info.objectForKey("name") as NSString
+            let info = cardsArray.objectAtIndex(index) as! NSDictionary
+            let name = info.objectForKey("name") as! NSString
             let button : UIButton = UIButton()
             let offSetY = 	buttonHeight * CGFloat(index)
             button.frame = CGRectMake(0, offSetY, buttonWidth, buttonHeight)
             button.backgroundColor = UIColor.clearColor()
             button.setBackgroundImage(UIImage(named: "btn_shot"), forState: UIControlState.Normal)
             button.tag = index
-            button.setTitle(name, forState: UIControlState.Normal)
+            button.setTitle(name as String, forState: UIControlState.Normal)
             button.setBackgroundImage(UIImage(named: "btn_shot_selected"), forState: UIControlState.Highlighted)
             button.addTarget(self, action: "showDetail:", forControlEvents: UIControlEvents.TouchUpInside)
             scrollView.addSubview(button)

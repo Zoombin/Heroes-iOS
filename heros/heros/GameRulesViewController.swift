@@ -25,8 +25,8 @@ class GameRulesViewController: UIViewController {
         self.view.addSubview(textView)
         
         let filePath = NSBundle.mainBundle().pathForResource("rule", ofType: "txt")
-        let htmlString = NSString(contentsOfFile: filePath!, encoding: NSUTF8StringEncoding, error: nil)
-        textView.text = htmlString
+        let htmlString = try! NSString(contentsOfFile: filePath!, encoding: NSUTF8StringEncoding)
+        textView.text = htmlString as String
     }
 
     override func didReceiveMemoryWarning() {

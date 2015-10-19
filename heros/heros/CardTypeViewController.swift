@@ -19,12 +19,12 @@ class CardTypeViewController: UIViewController {
         self.view.backgroundColor = UIColor(red: 217/255.0, green: 194/255.0, blue: 150/255.0, alpha: 1.0)
         
         cardFile = cardFile.stringByReplacingOccurrencesOfString("_type", withString: "")
-        let filePath = NSBundle.mainBundle().pathForResource(cardFile, ofType: "txt")
-        let txtString = NSString(contentsOfFile: filePath!, encoding: NSUTF8StringEncoding, error: nil)
-        println(txtString)
+        let filePath = NSBundle.mainBundle().pathForResource(cardFile as String, ofType: "txt")
+        let txtString = try! NSString(contentsOfFile: filePath!, encoding: NSUTF8StringEncoding)
+        print(txtString)
         
-        let data = txtString?.dataUsingEncoding(NSUTF8StringEncoding)
-        cardsArray = NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers, error: nil) as NSArray
+        let data = txtString.dataUsingEncoding(NSUTF8StringEncoding)
+        cardsArray = try! NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers) as! NSArray
         
         
         let screenWidth = UIScreen .mainScreen().bounds.size.width
@@ -55,15 +55,15 @@ class CardTypeViewController: UIViewController {
         self.view.addSubview(scrollView)
         
         for index in 0...(count - 1) {
-            let info = cardsArray.objectAtIndex(index) as NSDictionary
-            let name = info.objectForKey("name") as NSString
+            let info = cardsArray.objectAtIndex(index) as! NSDictionary
+            let name = info.objectForKey("name") as! NSString
             let button : UIButton = UIButton()
             let offSetY = buttonHeight * CGFloat(index)
             button.frame = CGRectMake(0, offSetY, buttonWidth, buttonHeight)
             button.backgroundColor = UIColor.clearColor()
             button.setBackgroundImage(UIImage(named: "btn_shot"), forState: UIControlState.Normal)
             button.tag = index
-            button.setTitle(name, forState: UIControlState.Normal)
+            button.setTitle(name as String, forState: UIControlState.Normal)
             button.setBackgroundImage(UIImage(named: "btn_shot_selected"), forState: UIControlState.Highlighted)
             button.addTarget(self, action: "showDetail:", forControlEvents: UIControlEvents.TouchUpInside)
             scrollView.addSubview(button)
@@ -76,8 +76,8 @@ class CardTypeViewController: UIViewController {
     
     func showDetail(sender : UIButton) {
         let cardTypeVC = CardTypeViewController()
-        let info : NSDictionary = cardsArray.objectAtIndex(sender.tag) as NSDictionary
-        let name : NSString = info.objectForKey("name") as NSString
+        let info : NSDictionary = cardsArray.objectAtIndex(sender.tag) as! NSDictionary
+        let name : NSString = info.objectForKey("name") as! NSString
         var fileName : NSString = ""
         var showDetail : Bool = false
         if (name.isEqualToString("基础版")) {
@@ -164,13 +164,13 @@ class CardTypeViewController: UIViewController {
         if (showDetail) {
             let cardsListVC = CardsListViewController()
             cardsListVC.setFileName(fileName)
-            cardsListVC.title = name
+            cardsListVC.title = name as String
             self.navigationController?.pushViewController(cardsListVC, animated: true)
             return
         }
         cardTypeVC.setFileName(fileName)
         cardTypeVC.isBase = isBase
-        cardTypeVC.title = info.objectForKey("name") as NSString
+        cardTypeVC.title = info.objectForKey("name") as! NSString as String
         self.navigationController?.pushViewController(cardTypeVC, animated: true)
     }
     

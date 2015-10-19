@@ -37,13 +37,13 @@ class CardDetailViewController: UIViewController, UIScrollViewDelegate{
         self.view.addSubview(scrollView)
         
         for index in 0...(cardsArray.count - 1) {
-            let info = cardsArray.objectAtIndex(index) as NSDictionary
-            var imagePath = info.objectForKey("imagepath") as NSString
+            let info = cardsArray.objectAtIndex(index) as! NSDictionary
+            var imagePath = info.objectForKey("imagepath") as! NSString
             imagePath = imagePath.stringByReplacingOccurrencesOfString(".jpg", withString: "")
             let offSetX = screenWidth * CGFloat(index)
             let imageView : UIImageView = UIImageView()
             imageView.frame = CGRectMake(offSetX, 0, screenWidth, screenHeight - 40)
-            imageView.image = UIImage(named: imagePath)
+            imageView.image = UIImage(named: imagePath as String)
             scrollView.addSubview(imageView)
         }
         
