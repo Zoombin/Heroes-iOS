@@ -20,7 +20,7 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "请左右滑动选择大侠类型"
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(named: "main_nav_bg"), forBarMetrics: UIBarMetrics.Default)
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(named: "main_nav_bg.png"), forBarMetrics: UIBarMetrics.Default)
         self.view.backgroundColor = UIColor(red: 217/255.0, green: 194/255.0, blue: 150/255.0, alpha: 1.0)
         
         let navigationTitleAttribute : NSDictionary = NSDictionary(object: UIColor.whiteColor(),forKey: NSForegroundColorAttributeName)
@@ -38,7 +38,7 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
         topScrollView.delegate = self
         self.view.addSubview(topScrollView)
 
-        let topTitles = ["hero_type_liliang", "hero_type_jiqiao", "hero_type_sudu", "hero_type_zhenqi"]
+        let topTitles = ["hero_type_liliang.png", "hero_type_jiqiao.png", "hero_type_sudu.png", "hero_type_zhenqi.png"]
         for index in 0...3 {
             let offSetX = rect.width * CGFloat(index)
             let button : UIButton = UIButton()

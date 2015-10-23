@@ -45,10 +45,10 @@ class CardsListViewController: UIViewController {
             let offSetY = 	buttonHeight * CGFloat(index)
             button.frame = CGRectMake(0, offSetY, buttonWidth, buttonHeight)
             button.backgroundColor = UIColor.clearColor()
-            button.setBackgroundImage(UIImage(named: "btn_shot"), forState: UIControlState.Normal)
+            button.setBackgroundImage(UIImage(named: "btn_shot.png"), forState: UIControlState.Normal)
             button.tag = index
             button.setTitle(name as String, forState: UIControlState.Normal)
-            button.setBackgroundImage(UIImage(named: "btn_shot_selected"), forState: UIControlState.Highlighted)
+            button.setBackgroundImage(UIImage(named: "btn_shot_selected.png"), forState: UIControlState.Highlighted)
             button.addTarget(self, action: "showDetail:", forControlEvents: UIControlEvents.TouchUpInside)
             scrollView.addSubview(button)
         }
