@@ -7,9 +7,9 @@
 //
 
 import UIKit
-class GameRulesViewController: UIViewController {
+class GameRulesViewController: BaseViewController {
     
-    let textView = UITextView()
+    let webView = UIWebView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,16 +17,17 @@ class GameRulesViewController: UIViewController {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(named: "main_nav_bg"), forBarMetrics: UIBarMetrics.Default)
         self.view.backgroundColor = UIColor.whiteColor()
         
-        textView.frame = CGRectMake(0, 0, UIScreen.mainScreen().bounds.size.width, UIScreen.mainScreen().bounds.size.height - 64)
-        textView.editable = false
-        textView.textColor = UIColor.whiteColor()
-        textView.font = UIFont.systemFontOfSize(17)
-        textView.backgroundColor = UIColor(red: 217/255.0, green: 194/255.0, blue: 150/255.0, alpha: 1.0)
-        self.view.addSubview(textView)
+        webView.frame = CGRectMake(0, 0, UIScreen.mainScreen().bounds.size.width, UIScreen.mainScreen().bounds.size.height - 64)
+        webView.scalesPageToFit = true
+        webView.scrollView.bounces = true;
+        webView.scrollView.alwaysBounceHorizontal = true
+        webView.dataDetectorTypes = UIDataDetectorTypes.None
+        webView.backgroundColor = UIColor(red: 217/255.0, green: 194/255.0, blue: 150/255.0, alpha: 1.0)
+        self.view.addSubview(webView)
         
-        let filePath = NSBundle.mainBundle().pathForResource("rule", ofType: "txt")
+        let filePath = NSBundle.mainBundle().pathForResource("rule", ofType: "html")
         let htmlString = try! NSString(contentsOfFile: filePath!, encoding: NSUTF8StringEncoding)
-        textView.text = htmlString as String
+        webView.loadHTMLString(htmlString as String, baseURL: nil)
     }
 
     override func didReceiveMemoryWarning() {

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CardDetailViewController: UIViewController, UIScrollViewDelegate{
+class CardDetailViewController: BaseViewController, UIScrollViewDelegate{
     var cardsArray : NSArray = NSArray()
     var cardIndex : NSInteger = 0
     let scrollView = UIScrollView()

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CardTypeViewController: UIViewController {
+class CardTypeViewController: BaseViewController {
     
     var cardFile : NSString = ""
     var cardsArray : NSArray = NSArray()
@@ -165,13 +165,13 @@ class CardTypeViewController: UIViewController {
             let cardsListVC = CardsListViewController()
             cardsListVC.setFileName(fileName)
             cardsListVC.title = name as String
-            self.navigationController?.pushViewController(cardsListVC, animated: true)
+            self.pushViewController(cardsListVC)
             return
         }
         cardTypeVC.setFileName(fileName)
         cardTypeVC.isBase = isBase
         cardTypeVC.title = info.objectForKey("name") as! NSString as String
-        self.navigationController?.pushViewController(cardTypeVC, animated: true)
+        self.pushViewController(cardTypeVC)
     }
     
     override func didReceiveMemoryWarning() {

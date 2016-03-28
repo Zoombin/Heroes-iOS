@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180235411CA8E8E400C4B8BB /* rule.html in Resources */ = {isa = PBXBuildFile; fileRef = 180235401CA8E8E400C4B8BB /* rule.html */; };
+		180235431CA8EBA800C4B8BB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180235421CA8EBA800C4B8BB /* BaseViewController.swift */; };
 		581543331B043C1500FA1C41 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 581543351B043C1500FA1C41 /* InfoPlist.strings */; };
 		5823D2401B0345260006CEA8 /* CardTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5823D23F1B0345260006CEA8 /* CardTypeViewController.swift */; };
 		582E8A121B02EA6600C55C85 /* bgmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 582E8A111B02EA6600C55C85 /* bgmusic.mp3 */; };
@@ -67,6 +69,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		180235401CA8E8E400C4B8BB /* rule.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = rule.html; sourceTree = "<group>"; };
+		180235421CA8EBA800C4B8BB /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		581543341B043C1500FA1C41 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		581543361B043C1D00FA1C41 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		5823D23F1B0345260006CEA8 /* CardTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTypeViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +151,7 @@
 				5823D23F1B0345260006CEA8 /* CardTypeViewController.swift */,
 				582E8A151B02F6CD00C55C85 /* GameRulesViewController.swift */,
 				5894651A1AF8765A00A1918F /* MainViewController.swift */,
+				180235421CA8EBA800C4B8BB /* BaseViewController.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -226,6 +231,7 @@
 		589465161AF8765A00A1918F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				180235401CA8E8E400C4B8BB /* rule.html */,
 				582E8A1E1B031E4700C55C85 /* files */,
 				582E8A1C1B03025400C55C85 /* rule.txt */,
 				582E8A111B02EA6600C55C85 /* bgmusic.mp3 */,
@@ -374,6 +380,7 @@
 				582E8A591B031E5800C55C85 /* moves_cate.txt in Resources */,
 				582E8A5A1B031E5800C55C85 /* moves_ji_s.txt in Resources */,
 				582E8A441B031E5800C55C85 /* clever.txt in Resources */,
+				180235411CA8E8E400C4B8BB /* rule.html in Resources */,
 				582E8A5F1B031E5800C55C85 /* moves_qi.txt in Resources */,
 				582E8A461B031E5800C55C85 /* drug.txt in Resources */,
 				582E8A4C1B031E5800C55C85 /* hero_zhenqi.txt in Resources */,
@@ -399,6 +406,7 @@
 				582E8A171B02F6CD00C55C85 /* GameRulesViewController.swift in Sources */,
 				5894651B1AF8765A00A1918F /* MainViewController.swift in Sources */,
 				5823D2401B0345260006CEA8 /* CardTypeViewController.swift in Sources */,
+				180235431CA8EBA800C4B8BB /* BaseViewController.swift in Sources */,
 				589465191AF8765A00A1918F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,7 +478,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "72b463e9-65dc-4716-befa-e5deeb1b4c24";
@@ -509,7 +517,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PROVISIONING_PROFILE = "72b463e9-65dc-4716-befa-e5deeb1b4c24";
 				SDKROOT = iphoneos;

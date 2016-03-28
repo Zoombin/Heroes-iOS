@@ -9,7 +9,7 @@
 import UIKit
 
 
-class CardsListViewController: UIViewController {
+class CardsListViewController: BaseViewController {
     var cardFile : NSString = ""
     var cardsArray : NSArray = NSArray()
     override func viewDidLoad() {
@@ -58,7 +58,7 @@ class CardsListViewController: UIViewController {
         let cardDetail = CardDetailViewController()
         cardDetail.title = self.title
         cardDetail.setCardsArrayAndIndex(cardsArray, index: sender.tag)
-        self.navigationController?.pushViewController(cardDetail, animated: true)
+        self.pushViewController(cardDetail)
     }
 
     override func didReceiveMemoryWarning() {

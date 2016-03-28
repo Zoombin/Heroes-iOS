@@ -15,16 +15,11 @@ let button1 = UIButton();
 let button2 = UIButton();
 let button3 = UIButton();
 
-class MainViewController: UIViewController, UIScrollViewDelegate {
+class MainViewController: BaseViewController, UIScrollViewDelegate {
    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "请左右滑动选择大侠类型"
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(named: "main_nav_bg.png"), forBarMetrics: UIBarMetrics.Default)
-        self.view.backgroundColor = UIColor(red: 217/255.0, green: 194/255.0, blue: 150/255.0, alpha: 1.0)
-        
-        let navigationTitleAttribute : NSDictionary = NSDictionary(object: UIColor.whiteColor(),forKey: NSForegroundColorAttributeName)
-        self.navigationController?.navigationBar.titleTextAttributes = navigationTitleAttribute as! [String : AnyObject]
         
         let screenWidth = UIScreen .mainScreen().bounds.size.width
         let screenHeight = UIScreen .mainScreen().bounds.size.height - 64
@@ -89,7 +84,7 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
             cardsListVC.title = "真气大侠"
             cardsListVC.setFileName(topTitles[3])
         }
-        self.navigationController?.pushViewController(cardsListVC, animated: true)
+        self.pushViewController(cardsListVC)
     }
     
     func bottomButtonClick(sender : UIButton) {
@@ -97,15 +92,15 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
             let cardTypeVC = CardTypeViewController()
             cardTypeVC.cardFile = "version"
             cardTypeVC.title = "游戏卡牌"
-            self.navigationController?.pushViewController(cardTypeVC, animated: true)
+            self.pushViewController(cardTypeVC)
         } else if (sender.tag == 1) {
             let gameRulesVC = GameRulesViewController()
-            self.navigationController?.pushViewController(gameRulesVC, animated: true)
+            self.pushViewController(gameRulesVC)
         } else if (sender.tag == 2) {
             let cardsListVC = CardsListViewController()
             cardsListVC.title = "武器列表"
             cardsListVC.setFileName("weapon")
-            self.navigationController?.pushViewController(cardsListVC, animated: true)
+            self.pushViewController(cardsListVC)
         }
     }
     
