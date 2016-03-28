@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "hero_meichaofeng.png"
+      "filename" : "hero_meichaofeng.jpg",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

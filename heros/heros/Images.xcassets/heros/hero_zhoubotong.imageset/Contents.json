@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "hero_zhoubotong.png"
+      "filename" : "hero_zhoubotong.jpg",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

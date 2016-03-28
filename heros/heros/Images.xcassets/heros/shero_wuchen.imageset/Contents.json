@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "shero_wuchen.png"
+      "filename" : "shero_wuchen.jpg",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

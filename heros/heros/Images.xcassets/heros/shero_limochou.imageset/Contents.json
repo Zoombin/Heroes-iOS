@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "shero_limochou.png"
+      "filename" : "shero_limochou.jpg",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

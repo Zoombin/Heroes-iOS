@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "shero_xuemuhua.png"
+      "filename" : "shero_xuemuhua.jpg",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

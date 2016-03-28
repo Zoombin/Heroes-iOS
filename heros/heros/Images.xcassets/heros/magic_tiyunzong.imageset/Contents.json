@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "magic_tiyunzong.png"
+      "filename" : "magic_tiyunzong.jpg",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

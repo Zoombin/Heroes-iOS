@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "shero_pingyizhi.png"
+      "filename" : "shero_pingyizhi.jpg",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

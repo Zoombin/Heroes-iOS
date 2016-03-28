@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "weapon_tulongdao.png"
+      "filename" : "weapon_tulongdao.jpg",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

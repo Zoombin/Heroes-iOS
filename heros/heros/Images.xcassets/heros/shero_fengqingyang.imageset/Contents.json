@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "shero_fengqingyang.png"
+      "filename" : "shero_fengqingyang.jpg",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

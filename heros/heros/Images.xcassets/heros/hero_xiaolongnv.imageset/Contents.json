@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "hero_xiaolongnv.png"
+      "filename" : "hero_xiaolongnv.jpg",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

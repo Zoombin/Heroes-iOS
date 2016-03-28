@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "identify_zhengpai.png"
+      "filename" : "identify_zhengpai.jpg",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

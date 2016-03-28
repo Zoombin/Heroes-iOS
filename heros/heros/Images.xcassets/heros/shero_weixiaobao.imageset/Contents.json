@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "shero_weixiaobao.png"
+      "filename" : "shero_weixiaobao.jpg",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

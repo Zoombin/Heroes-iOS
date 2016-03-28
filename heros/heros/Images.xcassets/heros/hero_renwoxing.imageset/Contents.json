@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "hero_renwoxing.png"
+      "filename" : "hero_renwoxing.jpg",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

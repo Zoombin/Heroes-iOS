@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "hero_fangzhengdashi.png"
+      "filename" : "hero_fangzhengdashi.jpg",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "weapon_yitianjian.png"
+      "filename" : "weapon_yitianjian.jpg",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

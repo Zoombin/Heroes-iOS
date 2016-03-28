@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "hero_qiuqianren.png"
+      "filename" : "hero_qiuqianren.jpg",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

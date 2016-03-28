@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "hero_chenjinnan.png"
+      "filename" : "hero_chenjinnan.jpg",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "hero_xiaxueyi.png"
+      "filename" : "hero_xiaxueyi.jpg",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

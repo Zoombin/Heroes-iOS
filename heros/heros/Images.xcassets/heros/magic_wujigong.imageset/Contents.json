@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "magic_wujigong.png"
+      "filename" : "magic_wujigong.jpg",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

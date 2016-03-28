@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "hero_yangguo.png"
+      "filename" : "hero_yangguo.jpg",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "shero_huangrong.png"
+      "filename" : "shero_huangrong.jpg",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

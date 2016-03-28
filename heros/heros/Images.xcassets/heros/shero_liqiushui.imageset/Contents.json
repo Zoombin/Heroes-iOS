@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "shero_liqiushui.png"
+      "filename" : "shero_liqiushui.jpg",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "clever_zhidian.png"
+      "filename" : "clever_zhidian.jpg",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

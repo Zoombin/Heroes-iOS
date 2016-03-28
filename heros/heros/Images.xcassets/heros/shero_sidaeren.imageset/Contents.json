@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "shero_sidaeren.png"
+      "filename" : "shero_sidaeren.jpg",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

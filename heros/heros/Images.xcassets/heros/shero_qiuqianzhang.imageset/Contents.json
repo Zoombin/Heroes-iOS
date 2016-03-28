@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "shero_qiuqianzhang.png"
+      "filename" : "shero_qiuqianzhang.jpg",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "shero_suxinghe.png"
+      "filename" : "shero_suxinghe.jpg",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

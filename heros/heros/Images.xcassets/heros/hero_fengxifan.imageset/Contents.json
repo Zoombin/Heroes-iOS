@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "hero_fengxifan.png"
+      "filename" : "hero_fengxifan.jpg",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

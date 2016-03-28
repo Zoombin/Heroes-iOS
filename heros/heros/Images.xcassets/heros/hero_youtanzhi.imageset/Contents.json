@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "hero_youtanzhi.png"
+      "filename" : "hero_youtanzhi.jpg",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

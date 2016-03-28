@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "hero_hongqigong.png"
+      "filename" : "hero_hongqigong.jpg",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

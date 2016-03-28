@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "hero_zhangsanfeng.png"
+      "filename" : "hero_zhangsanfeng.jpg",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "shero_jiunan.png"
+      "filename" : "shero_jiunan.jpg",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

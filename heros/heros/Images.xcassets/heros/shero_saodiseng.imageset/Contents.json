@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "shero_saodiseng.png"
+      "filename" : "shero_saodiseng.jpg",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

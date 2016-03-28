@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "hero_jinlunfawang.png"
+      "filename" : "hero_jinlunfawang.jpg",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

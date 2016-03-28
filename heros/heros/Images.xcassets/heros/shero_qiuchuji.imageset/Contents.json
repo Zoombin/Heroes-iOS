@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "shero_qiuchuji.png"
+      "filename" : "shero_qiuchuji.jpg",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

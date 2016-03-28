@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "hero_yubuqun.png"
+      "filename" : "hero_yubuqun.jpg",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",

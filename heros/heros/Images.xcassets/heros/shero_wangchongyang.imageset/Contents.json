@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "shero_wangchongyang.png"
+      "filename" : "shero_wangchongyang.jpg",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",
